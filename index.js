@@ -1,4 +1,5 @@
 function pobierzDane() {
+    let h1 = document.getElementById("h1");
             // Pobieramy parametry z adresu URL
             var urlParams = new URLSearchParams(window.location.search);
 
@@ -8,7 +9,7 @@ function pobierzDane() {
                 var username = urlParams.get('username');
 
                 // Wyświetlamy komunikat powitalny
-                document.getElementById("welcome-message").innerText = "Hello, " + username + "!";
+                h1.textContent = "hello" + username;
             }
         }
 
